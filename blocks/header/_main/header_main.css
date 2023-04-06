@@ -1,0 +1,45 @@
+.header_main {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px){
+  .header_main {
+    background-image: url('../../../images/header/__background-image_mobile.png');
+  }
+}
+
+@media screen and (width: 768px){
+    .header_main {
+      background-image: url('../../../images/header/__background-image_ipad.png');
+      background-size: 768px 400px;
+    }
+}
+
+@media screen 
+and (min-width: 769px)
+and (max-width: 1024px) {
+    .header_main {
+      background-image: url('../../../images/header/__background-image_ipad.png');
+    }
+}
+
+@media screen 
+and (min-width: 1025px)
+and (max-width: 1439px) {
+    .header_main {
+      background-image: url('../../../images/header/__background-image_desktop.png');
+    }
+}
+
+@media screen 
+and (min-width: 1440px) {
+    .header_main {
+      background-image: url('../../../images/header/__background-image_desktop_1440.png');
+    }
+}

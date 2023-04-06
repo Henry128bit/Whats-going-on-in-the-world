@@ -1,0 +1,41 @@
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #F5F6F7;
+    padding: 32px 16px 38px;
+    margin: 0;
+}
+
+@media screen 
+and (min-width: 321px)
+and (max-width: 767px) {
+    .technology {
+        align-items: center;
+    }
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .technology {
+        padding: 40px 40px 49px;
+    }
+}
+
+@media screen 
+and (min-width: 1025px)
+and (max-width: 1280px) {
+    .technology {
+        padding: 80px 104px 95px;
+    }
+}
+
+@media screen 
+and (min-width: 1281px) {
+    .technology {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px 104px 95px;
+    }
+}

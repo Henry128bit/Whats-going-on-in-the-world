@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Что в мире творится?</title>
+  <meta name="Description" content="Поиск новостей по заданной теме"/>
+  <meta name="author" content="Каменский Сергей">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="page">
+      <header class="header_pages">
+        <a class="link header__link header__link_news header__link_news_pages" href="./index.html">NewsAnalyzer</a>
+        <ul class="nav header__links-wrap_pages">
+          <li class="header__item"><a class="link header__link header__link_nav_pages" href="./index.html">Главная</a></li>
+          <li class="header__item header__item_choice_pages"><a class="link header__link header__link_nav_pages header__link_nav_choice_pages" href="./about.html">О проекте</a></li>
+        </ul>
+      </header>
+      <main class="content">
+        <section class="section">
+          <p class="section__text"><a class="link section__link section__link_choice" href="./index.html">Главная</a> / Аналитика</p>
+        </section>
+        <section class="statistics">
+          <h2 class="statistics__title">Вы спросили: «<span class="statistics__category">Путешествия</span>»</h2>
+          <p class="statistics__text">Новостей за неделю: <span class="statistics__number statistics__number_week">34 324</span></p>
+          <p class="statistics__text">Упоминаний в загаловках: <span class="statistics__number statistics__number_headline">235</span></p>
+        </section>
+        <section class="graph">
+          <h3 class="graph__title">Аналитика по дням</h3>
+          <div class="graph__wrapper">
+            <p class="graph__text">Дата <span class="graph__month">август</span></p>
+            <p class="graph__text">Кол-во упоминаний</p>
+          </div>
+          <div class="graph__elements">
+            <div class="graph__wrapper-blocks">
+              <div class="graph__block"></div>
+              <p class="graph__block_number">0</p>
+              <p class="graph__block_number">25</p>
+              <p class="graph__block_number">50</p>
+              <p class="graph__block_number">75</p>
+              <p class="graph__block_number">100</p>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-elements">
+              <p class="graph__data"></p>
+              <div class="graph__element"></div>
+            </div>
+            <div class="graph__wrapper-blocks">
+              <div class="graph__block"></div>
+              <p class="graph__block_number">0</p>
+              <p class="graph__block_number">25</p>
+              <p class="graph__block_number">50</p>
+              <p class="graph__block_number">75</p>
+              <p class="graph__block_number">100</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <ul class="footer__links">
+          <li class="footer__item"><a class="link footer__link" href="./index.html">Главная</a></li>
+          <li class="footer__item"><a class="link footer__link" href="./about.html">О проекте</a></li>
+          <li class="footer__item"><a class="link footer__link" target="_blank" href="https://praktikum.yandex.ru/web">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__wrapper">
+          <a class="link footer__link-icon" target="_blank" href="https://github.com/"><img class="footer__icon" src="<%= require('./images/footer/__github-icon.svg') %>" alt="GitHub icon"></a>
+          <a class="link footer__link-icon" target="_blank" href="https://www.facebook.com/"><img class="footer__icon" src="<%= require('./images/footer/__facebook-icon.svg') %>" alt="Facebook icon"></a>
+        </div>
+        <small class="footer__copy">&copy; 2019  Supersite</small>
+      </footer>
+    </div>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.results__form {
+    margin: 13px 0 0;
+    display: none;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .results__form {
+        margin: 22px 0 0;
+    }
+}
+
+@media screen 
+and (min-width: 1025px) {
+    .results__form {
+        margin: 64px 0 0;
+    }
+}

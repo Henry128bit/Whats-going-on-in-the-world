@@ -1,0 +1,29 @@
+.graph__block_number {
+    display: block;
+    text-align: start;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+
+    padding: 0;
+    margin: 0;
+}
+
+.graph__block_number:nth-child(3) {
+    text-align: start;
+    padding-left: 25%;
+}
+.graph__block_number:nth-child(4) {
+    text-align: center;
+}
+.graph__block_number:nth-child(5) {
+    text-align: end;
+    padding-right: 25%;
+}
+.graph__block_number:nth-child(6) {
+    text-align: end;
+}

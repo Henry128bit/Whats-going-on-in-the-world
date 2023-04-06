@@ -1,0 +1,31 @@
+.card {
+    width: 288px;
+    height: 445px;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 0;
+    margin: 8px 0 0;
+}
+
+.card:first-child {
+    margin: 0;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .card {
+        width: 224px;
+        height: 420px;
+        margin: 0;
+    }
+}
+
+@media screen 
+and (min-width: 1025px) {
+    .card {
+        width: 400px;
+        height: 576px;
+        margin: 0;
+    }
+}

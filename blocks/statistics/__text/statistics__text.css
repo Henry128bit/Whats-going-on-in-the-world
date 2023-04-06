@@ -1,0 +1,21 @@
+.statistics__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+.statistics__text:first-of-type {
+    margin-top: 16px;
+}
+
+@media screen 
+and (min-width: 768px) {
+    .statistics__text:first-of-type {
+        margin-top: 24px;
+    }
+}

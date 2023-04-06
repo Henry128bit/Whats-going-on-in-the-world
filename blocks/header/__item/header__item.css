@@ -1,0 +1,25 @@
+.header__item {
+    padding: 0 0 13px;
+    margin: 0;
+}
+
+.header__item:first-child {
+    margin-right: 11px;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+  .header__item:first-child {
+      padding: 0 0 18px;
+      margin-right: 34px;
+  }
+}
+
+@media screen 
+and (min-width: 1025px) {
+  .header__item:first-child {
+      padding: 0 0 23px;
+      margin-right: 34px;
+  }
+}

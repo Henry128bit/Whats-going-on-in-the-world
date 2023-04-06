@@ -1,0 +1,15 @@
+.history__image {
+    width: 48px;
+    height: 48px;
+
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+@media screen 
+and (min-width: 1366px) {
+    .history__image {
+        width: 64px;
+        height: 64px;
+    }
+}

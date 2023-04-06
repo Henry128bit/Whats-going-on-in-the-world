@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Что в мире творится?</title>
+  <meta name="Description" content="Поиск новостей по заданной теме"/>
+  <meta name="author" content="Каменский Сергей">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="page">
+      <header class="header_main">
+        <div class="header__nav-wrap">
+          <a class="link header__link header__link_news" href="./index.html">NewsAnalyzer</a>
+          <ul class="nav header__links-wrap">
+            <li class="header__item header__item_choice"><a class="link header__link header__link_nav header__link_nav_choice" href="./index.html">Главная</a></li>
+            <li class="header__item"><a class="link header__link header__link_nav" href="./about.html">О проекте</a></li>
+          </ul>
+        </div>
+          <div class="header__conten-wrapper">
+          <h1 class="header__caption">Что в мире творится?</h1>
+          <p class="header__text">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за 
+            прошедшую неделю.</p>
+          <form class="header__search-form">
+            <input name="theme" class="header__input" placeholder="Введите тему новости" pattern="^[а-яА-ЯёЁa-zA-Z,\-,\d,\s]+$" required>
+            <span id='error-message'class='header__error-message header__error-message_hiden'></span>
+            <button id='submit-header' type='submit' class="button header__button">Искать</button>
+          </form>
+        </div>
+      </header>
+      <main class="content">
+        <section class="preloader">
+          <div class="preloader__circle"></div>
+          <p class="preloader__message">Идет поиск новостей...</p>
+        </section>
+        <section class="error">
+          <img class="error__image" src="<%= require('./images/error/__not-found.png') %>" alt="Смайлик-ошибка">
+          <h4 class="error__title">Ничего не найдено</h4>
+          <p class="error__text">К сожалению по вашему запросу ничего не найдено.</p>
+        </section>
+        <section class="results">
+          <div class="results__wrapper">
+            <h2 class="results__title">Результаты поиска</h2>
+            <a class="link results__link" href="./analytics.html">Посмотреть аналитику</a>
+          </div>
+          <div class="results__container">
+
+            <!-- Сюда будет вкладывать карточки JS -->
+            
+          </div>
+          <form class="results__form">
+            <button id='add-button' type='button' class="button results__button">Показать еще</button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <ul class="footer__links">
+          <li class="footer__item"><a class="link footer__link" href="./index.html">Главная</a></li>
+          <li class="footer__item"><a class="link footer__link" href="./about.html">О проекте</a></li>
+          <li class="footer__item"><a class="link footer__link" target="_blank" href="https://praktikum.yandex.ru/web">Яндекс.Практикум</a></li>
+        </ul>
+        <div class="footer__wrapper">
+          <a class="link footer__link-icon" target="_blank" href="https://github.com/"><img class="footer__icon" src="<%= require('./images/footer/__github-icon.svg') %>" alt="GitHub icon"></a>
+          <a class="link footer__link-icon" target="_blank" href="https://www.facebook.com/"><img class="footer__icon" src="<%= require('./images/footer/__facebook-icon.svg') %>" alt="Facebook icon"></a>
+        </div>
+        <small class="footer__copy">&copy; 2019  Supersite</small>
+      </footer>
+    </div>
+  </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>

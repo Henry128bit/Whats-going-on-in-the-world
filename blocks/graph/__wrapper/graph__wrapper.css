@@ -1,0 +1,29 @@
+.graph__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 64px 208px;
+    grid-template-rows: 32px;
+    grid-column-gap: 16px;
+    padding: 0 0 8px;
+    margin: 16px 0 0;
+    border-bottom: 1px solid #1A1B22;
+}
+
+@media screen 
+and (min-width: 321px)
+and (max-width: 767px) {
+    .graph__wrapper {
+        grid-template-columns: 65px 1fr;
+        grid-column-gap: 50px;
+    }
+}
+
+@media screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .graph__wrapper {
+        grid-template-columns: 90px 1fr;
+        grid-column-gap: 13px;
+        margin-top: 48px;
+    }
+}

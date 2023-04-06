@@ -1,0 +1,16 @@
+.results__button {
+    width: 288px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    background: #FFFFFF;
+    border-radius: 80px;
+    border: 1px solid #F5F6F7;
+    padding: 0;
+    margin: 0;
+}
+
+.results__button:hover {
+    opacity: 0.9;
+}

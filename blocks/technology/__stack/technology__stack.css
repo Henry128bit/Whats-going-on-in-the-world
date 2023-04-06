@@ -1,0 +1,30 @@
+.technology__stack {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 153px);
+    grid-gap: 35px;
+    padding: 0;
+    margin: 35px 0 0;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1280px) {
+    .technology__stack {
+        grid-template-columns: repeat(4, 120px);
+        grid-template-rows: 153px;
+        grid-column-gap: 78px;
+        margin: 70px 0 0;
+    }
+}
+
+@media screen 
+and (min-width: 1281px) {
+    .technology__stack {
+        grid-template-columns: repeat(4, 120px);
+        grid-template-rows: 153px;
+        grid-column-gap: 73px;
+        margin: 0;
+    }
+}

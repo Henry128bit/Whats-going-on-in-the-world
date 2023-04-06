@@ -1,0 +1,113 @@
+/* подключаю normalize.css*/
+@import url('../vendor/normalize.css');
+/* подключаю шрифты */
+@import url('../vendor/fonts.css');
+/* Блок Header */
+@import url('../blocks/header/_main/header_main.css');
+@import url('../blocks/header/__nav-wrap/header__nav-wrap.css');
+@import url('../blocks/header/__links-wrap/header__links-wrap.css');
+@import url('../blocks/header/__item/header__item.css');
+@import url('../blocks/header/__item/_choice/header__item_choice.css');
+@import url('../blocks/header/__link/header__link.css');
+@import url('../blocks/header/__link/_news/header__link_news.css');
+@import url('../blocks/header/__link/_nav/header__link_nav.css');
+@import url('../blocks/header/__link/_nav/_choice/header__link_nav_choice.css');
+@import url('../blocks/header/__content-wrapper/header__conten-wrapper.css');
+@import url('../blocks/header/__caption/header__caption.css');
+@import url('../blocks/header/__text/header__text.css');
+@import url('../blocks/header/__search-form/header__search-form.css');
+@import url('../blocks/header/__input/header__input.css');
+@import url('../blocks/header/__input/_invalid/header__input_invalid.css');
+@import url('../blocks/header/__error-message/header__error-message.css');
+@import url('../blocks/header/__button/header__button.css');
+/* Блок Preloader */
+@import url('../blocks/preloader/preloader.css');
+@import url('../blocks/preloader/_active/preloader_active.css');
+@import url('../blocks/preloader/__circle/preloader__circle.css');
+@import url('../blocks/preloader/__message/preloader__message.css');
+/* Блок Error */
+@import url('../blocks/error/error.css');
+@import url('../blocks/error/_active/error_active.css');
+@import url('../blocks/error/__image/error__image.css');
+@import url('../blocks/error/title/error__title.css');
+@import url('../blocks/error/__text/error__text.css');
+/* Блок Results */
+@import url('../blocks/results/results.css');
+@import url('../blocks/results/_hide/results_hide.css');
+@import url('../blocks/results/__wrapper/results__wrapper.css');
+@import url('../blocks/results/__title/results__title.css');
+@import url('../blocks/results/__link/results__link.css');
+@import url('../blocks/results/__container/results__container.css');
+@import url('../blocks/results/__card/results__card.css');
+@import url('../blocks/results/__form/results__form.css');
+@import url('../blocks/results/__form/_active/results__form_active.css');
+@import url('../blocks/results/__button/results__button.css');
+/* Блок Card */
+@import url('../blocks/card/card.css');
+@import url('../blocks/card/__image/card__image.css');
+@import url('../blocks/card/__info/card__info.css');
+@import url('../blocks/card/__time/card__time.css');
+@import url('../blocks/card/__title/card__title.css');
+@import url('../blocks/card/__text/card__text.css');
+@import url('../blocks/card/__link/card__link.css');
+/* Блок Footer */
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__links/footer__links.css');
+@import url('../blocks/footer/__item/footer__item.css');
+@import url('../blocks/footer/__link/footer__link.css');
+@import url('../blocks/footer/__wrapper/footer__wrapper.css');
+@import url('../blocks/footer/__link-icon/footer__link-icon.css');
+@import url('../blocks/footer/__icon/footer__icon.css');
+@import url('../blocks/footer/__copy/footer__copy.css');
+
+.page-wrapper {
+    width: 100%;
+    background: #E5E5E5;
+}
+
+.page {
+    min-width: 320px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    box-sizing: border-box;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:focus {
+    outline-style: none;
+}
+
+/* Keyframes (preloader)*/
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

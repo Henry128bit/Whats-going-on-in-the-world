@@ -1,0 +1,8 @@
+.footer__link-icon {
+    padding: 0;
+    margin: 0;
+}
+
+.footer__link-icon:first-child {
+    margin-right: 28px;
+}

@@ -1,0 +1,15 @@
+.graph__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 18px 0 0;
+}
+
+@media screen 
+and (min-width: 768px) {
+    .graph__elements {
+        margin: 16px 0 0;
+    }
+}

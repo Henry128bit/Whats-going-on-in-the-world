@@ -1,0 +1,123 @@
+/* подключаю normalize.css*/
+@import url('../vendor/normalize.css');
+/* подключаю шрифты */
+@import url('../vendor/fonts.css');
+/* Блок Header */
+@import url('../blocks/header/_pages/header_pages.css');
+@import url('../blocks/header/__link/header__link.css');
+@import url('../blocks/header/__link/_news/header__link_news.css');
+@import url('../blocks/header/__link/_news/_pages/header__link_news_pages.css');
+@import url('../blocks/header/__links-wrap/_pages/header__links-wrap_pages.css');
+@import url('../blocks/header/__item/header__item.css');
+@import url('../blocks/header/__item/_choice/_pages/header__item_choice_pages.css');
+@import url('../blocks/header/__link/_nav/_pages/header__link_nav_pages.css');
+@import url('../blocks/header/__link/_nav/_choice/_pages/header__link_nav_choice_pages.css');
+/* Блок Client */
+@import url('../blocks/client/client.css');
+@import url('../blocks/client/__title/client__title.css');
+@import url('../blocks/client/__text/client__text.css');
+/* Блок Technology */
+@import url('../blocks/technology/technology.css');
+@import url('../blocks/technology/__title/technology__title.css');
+@import url('../blocks/technology/__stack/technology__stack.css');
+@import url('../blocks/technology/__image/technology__image.css');
+/* Блок History */
+@import url('../blocks/history/history.css');
+@import url('../blocks/history/__wrapper/history__wrapper.css');
+@import url('../blocks/history/__title/history__title.css');
+@import url('../blocks/history/__link/history__link.css');
+
+@import url('../blocks/history/__swiper/history__swiper.css');
+@import url('../blocks/history/__swiper-slide/history__swiper-slide.css');
+@import url('../blocks/history/__data/history__data.css');
+@import url('../blocks/history/__info/history__info.css');
+@import url('../blocks/history/__image/history__image.css');
+@import url('../blocks/history/__name/history__name.css');
+@import url('../blocks/history/__mail/history__mail.css');
+@import url('../blocks/history/__comment/history__comment.css');
+
+@import url('../blocks/history/__swiper-button/history__swiper-button.css');
+@import url('../blocks/history/__swiper-button/_next/history__swiper-button_next.css');
+@import url('../blocks/history/__swiper-button/_prev/history__swiper-button_prev.css');
+
+@import url('../blocks/history/__swiper-pagination/history__swiper-pagination.css');
+
+/* Блок Footer */
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__links/footer__links.css');
+@import url('../blocks/footer/__item/footer__item.css');
+@import url('../blocks/footer/__link/footer__link.css');
+@import url('../blocks/footer/__wrapper/footer__wrapper.css');
+@import url('../blocks/footer/__link-icon/footer__link-icon.css');
+@import url('../blocks/footer/__icon/footer__icon.css');
+@import url('../blocks/footer/__copy/footer__copy.css');
+
+.page-wrapper {
+    width: 100%;
+    background: #E5E5E5;
+}
+
+.page {
+    min-width: 320px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    width: 288px;
+    height: 56px;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.button:hover {
+    opacity: 0.9;
+}
+
+/* Настройки слайдера */
+.swiper-pagination-bullet {
+    background-color: #1A1B22 !important;
+}
+/* .swiper-slide {
+    opacity: .5;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+} */
+
+/* .swiper-slide {
+    background: #fff;
+    border-radius: 16px;
+}
+
+@media screen 
+and (min-width: 1366px) {
+    .swiper-slide {
+        width: 360px !important;
+    }
+} */

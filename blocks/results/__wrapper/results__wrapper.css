@@ -1,0 +1,13 @@
+.results__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen 
+and (min-width: 425px) {
+    .results__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

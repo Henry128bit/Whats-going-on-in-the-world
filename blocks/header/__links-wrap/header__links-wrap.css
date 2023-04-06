@@ -1,0 +1,4 @@
+.header__links-wrap {
+    display: flex;
+    justify-content: space-between;
+}

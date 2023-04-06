@@ -1,0 +1,30 @@
+.graph {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #F5F6F7;
+    padding: 24px 16px 38px;
+    margin: 0;
+}
+
+@media screen              /* Это временное решение, пока у меня не будет подключен JS */
+and (max-width: 320px) {
+    .graph {
+        overflow: hidden;
+    }
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .graph {
+        padding: 40px;
+    }
+}
+
+@media screen 
+and (min-width: 1025px) {
+    .graph {
+        padding: 80px 104px;
+    }
+}

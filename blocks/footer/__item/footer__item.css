@@ -1,0 +1,39 @@
+.footer__item {
+    padding: 0;
+    margin: 29px 0 0;
+}
+
+.footer__item:first-child {
+    margin-top: 2px;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .footer__item {
+        margin: 0 25px 0 0;
+    }
+
+    .footer__item:first-child {
+        margin-top: 0;
+    }
+
+    .footer__item:last-child {
+        margin: 0;
+    }
+}
+
+@media screen
+and (min-width: 1025px) {
+    .footer__item {
+        margin: 0 40px 0 0;
+    }
+
+    .footer__item:first-child {
+        margin-top: 0;
+    }
+
+    .footer__item:last-child {
+        margin: 0;
+    }
+}

@@ -1,0 +1,24 @@
+.header__search-form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 64px 0 32px;
+
+    position: relative;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .header__search-form {
+        margin: 24px 0 0;
+    }
+}
+
+@media screen 
+and (min-width: 1025px) {
+    .header__search-form {
+        margin: 64px 0 0;
+    }
+}

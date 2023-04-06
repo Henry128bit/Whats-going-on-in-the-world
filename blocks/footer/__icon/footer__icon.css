@@ -1,0 +1,15 @@
+.footer__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen 
+and (min-width: 768px) {
+    .footer__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

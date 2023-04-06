@@ -1,0 +1,12 @@
+.graph__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    padding: 0;
+    margin: 0;
+}

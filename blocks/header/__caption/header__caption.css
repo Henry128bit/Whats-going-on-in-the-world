@@ -1,0 +1,31 @@
+.header__caption {
+    width: 285px;
+    align-self: center;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFF;
+    padding: 0;
+    margin: 30px 0 0;
+}
+
+@media screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+    .header__caption {
+        width: 385px;
+        margin: 0;
+    }
+}
+
+@media screen 
+and (min-width: 1025px) {
+    .header__caption {
+        width: 545px;
+        font-size: 60px;
+        line-height: 64px;
+        margin: 0;
+    }
+}
