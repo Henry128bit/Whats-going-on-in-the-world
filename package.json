@@ -20,6 +20,8 @@
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "cssnano": "^5.1.15",
+    "favicons": "^7.1.1",
+    "favicons-webpack-plugin": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.5",
