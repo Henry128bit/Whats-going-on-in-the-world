@@ -1,5 +1,5 @@
 {
-  "name": "whats-going-on-in-the-world",
+  "name": "whats_going_on_in_the_world",
   "version": "1.0.0",
   "description": "graduation project",
   "main": "index.js",
@@ -10,6 +10,7 @@
   },
   "author": "Kamensky Sergey",
   "license": "ISC",
+  "homepage": "https://henry128bit.github.io/Whats-going-on-in-the-world/",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
@@ -22,6 +23,7 @@
     "cssnano": "^5.1.15",
     "favicons": "^7.1.1",
     "favicons-webpack-plugin": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.5",
