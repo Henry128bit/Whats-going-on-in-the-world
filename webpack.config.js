@@ -36,7 +36,7 @@ module.exports = {
             test: /\.(png|jpe?g|gif|ico|svg)$/i,
             type: 'asset/resource',   // <-- как указано тут
             generator: {
-                filename: 'assets/image/[name].[ext]'  // создает папку для файлов типа 'asset/resource'
+                filename: 'assets/image/[name][ext]'  // создает папку для файлов типа 'asset/resource'
               },
             use: {loader: 'image-webpack-loader'}
             },
@@ -44,7 +44,7 @@ module.exports = {
             test: /\.(ttf|woff|woff2|eot)$/i,
             type: 'asset/resource',
             generator: {
-                filename: 'assets/fonts/[name].[ext]'
+                filename: 'assets/fonts/[name][ext]'
               }
             }
         ]
