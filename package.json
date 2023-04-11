@@ -4,9 +4,9 @@
   "description": "graduation project",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production && touch dist/.nojekyll",
     "dev": "cross-env NODE_ENV=development webpack serve --mode development --open",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist --dotfiles"
   },
   "author": "Kamensky Sergey",
   "license": "ISC",
