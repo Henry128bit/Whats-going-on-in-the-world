@@ -26,6 +26,3 @@ const graphElement = document.querySelectorAll('.graph__element');
 // инстансы классов
 const storage = new DataStorage();
 const stat = new Statistics(theme, weekNews, headline, graphMonth, graphTime, graphElement, storage, daysAgo, timeConverter, counter, getDay);
-
-//Test
-console.log('Hello Analytics!');

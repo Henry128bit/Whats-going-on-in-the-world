@@ -60,6 +60,3 @@ const card = new CommitCard();
 const distributor = new Distributor(card, timeConverter);
 const gitApi =  new GithubApi(COMMIT_API_URL);
 const commitList = new CommitCardList(container, gitApi, distributor, swiper);
-
-//Test
-console.log('Hello About!');

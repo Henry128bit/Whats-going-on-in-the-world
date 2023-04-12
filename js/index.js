@@ -44,6 +44,3 @@ const distributor = new Distributor(card, timeConverter);
 const cardList = new NewsCardList(storage, distributor, container, card, resultsForm, addButton, resultsBlock);
 const api = new NewsApi(input, API_KEY, currentData, daysAgo, preloader, notFound, storage, cardList);
 const search = new SearchInput(input, submitButton, errorMessage, ERRORS, api);
-
-// Test
-console.log('Hello Index!');
