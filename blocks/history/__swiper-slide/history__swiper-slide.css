@@ -4,5 +4,12 @@
 
     box-sizing: border-box !important;
 
-    padding: 20px 20px !important;
+    padding: 14px 14px !important;
+}
+
+@media screen 
+and (min-width: 1366px) {
+    .history__swiper-slide {
+        padding: 20px 20px !important;
+    }
 }

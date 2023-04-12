@@ -10,5 +10,12 @@
     margin: 16px 0 0;
 
     grid-column: 1 / 3;
-    grid-row: 3;
+    grid-row: 4;
+}
+
+@media screen 
+and (min-width: 1366px) {
+    .history__comment {
+        grid-row: 3;
+    }
 }
