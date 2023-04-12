@@ -34,9 +34,9 @@ module.exports = {
             },
             {
             test: /\.(png|jpe?g|gif|ico|svg)$/i,
-            type: 'asset/resource',   // <-- как указано тут
+            type: 'asset/resource',
             generator: {
-                filename: 'assets/image/[name][ext]'  // создает папку для файлов типа 'asset/resource'
+                filename: 'assets/image/[name][ext]'
               },
             use: {loader: 'image-webpack-loader'}
             },
@@ -60,19 +60,16 @@ module.exports = {
             filename: 'style.[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-            // inject: false,
             template: './index.html',
             filename: 'index.html',
             chunks: ['index']
         }),
         new HtmlWebpackPlugin({
-            // inject: false,
             template: './about.html',
             filename: 'about.html',
             chunks: ['about']
         }),
         new HtmlWebpackPlugin({
-            // inject: false,
             template: './analytics.html',
             filename: 'analytics.html',
             chunks: ['analytics']
@@ -82,12 +79,12 @@ module.exports = {
         }),
         new FaviconsWebpackPlugin({
             logo: './images/favicon/group.png',
-            prefix: 'icons/', // папка куда будут складываться файлы
-            mode: 'webapp', // отвечает за генерацию файлов (под все платформы - webapp | одна картинка - light | самостоятельно решает - auto)
+            prefix: 'icons/',
+            mode: 'webapp',
             devMode: 'webapp',
-            cache: true, // кеширование картинок между сборками
-            inject: htmlPlugin => { // позваоляет вставить иконки непосредственно в HTML 
-                return true; // true - для всех файлов, если нужны отдельные создаешь функцию под конкретный файл: 
+            cache: true,
+            inject: htmlPlugin => {
+                return true; 
             }
         })
     ]
