@@ -9,7 +9,6 @@ export default class CommitCardList {
     }
 
     render() {
-        debugger
         this.container.textContent = '';
 
         let arr;
