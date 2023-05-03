@@ -18,7 +18,7 @@ Technologies used:
 * Data is passed from page to page using **localStorage**.
 * **API** - an API request is made after entering a word. The API service is https://newsapi.org.
 * **Github API** - shows the last 20 commits of my repository.
-* **Слайдер** - a ready-made slider is used: http://idangero.us/swiper/. Installed via **npm-пакет**.
+* **Слайдер** - a ready-made slider is used: http://idangero.us/swiper/. Installed via **npm**.
 
 [Что в мире творится?](https://henry128bit.github.io/Whats-going-on-in-the-world/)
 =====================
